@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # import data
-data_dynamic = pd.read_csv('iam.dinamis.csv')  # Pastikan file CSV sesuai format
+data_dynamic = pd.read_csv('data.csv')  # Pastikan file CSV sesuai format
 
 # Sesuaikan nama kolom untuk data gyroscope dan accelerometer
 data_dynamic.rename(columns={

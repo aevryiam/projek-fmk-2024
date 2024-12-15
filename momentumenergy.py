@@ -7,7 +7,7 @@ mass = 70  # Massa tubuh dalam kg
 g = 9.81  # Percepatan gravitasi dalam m/s²
 
 # Import data (waktu, percepatan, dan kecepatan)
-data = pd.read_csv('iam.integral.csv')  # Ganti dengan nama file Anda
+data = pd.read_csv('data.csv')  # Ganti dengan nama file Anda
 time = data['time'].values
 acc_x = data['acc_x'].values  # Percepatan vertikal
 velocity = data['velocity_x'].values  # Kecepatan (hasil integrasi sebelumnya)
@@ -24,7 +24,7 @@ data['normal_force'] = normal_force  # Tambahkan ke dataframe
 data['energy'] = energy  # Tambahkan ke dataframe
 
 # Simpan hasil ke file baru
-output_file = 'iam.energy.csv'
+output_file = 'data.energy.csv'
 data.to_csv(output_file, index=False)
 print(f"Data telah disimpan ke '{output_file}'.")
 

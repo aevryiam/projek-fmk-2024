@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Read data file CSV
-data = pd.read_csv('iam.dinamis.csv') # Change 'data.csv' dengan file mu
+data = pd.read_csv('data.csv') # Change 'data.csv' dengan file mu
 
 # Sesuaikan nama kolom untuk data gyroscope dan accelerometer
 data.rename(columns={
@@ -49,7 +49,7 @@ data['velocity_z'] = vel_z
 data['velocity_magnitude'] = velocity_magnitude
 
 # Save hasil ke file CSV
-output_file = 'iam.integral.csv'
+output_file = 'data.integral.csv'
 data.to_csv(output_file, index=False)
 print(f"Data dengan kecepatan dan magnitudo telah disimpan ke '{output_file}'")
 
